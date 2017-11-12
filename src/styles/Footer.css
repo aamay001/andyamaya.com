@@ -1,0 +1,32 @@
+.portfolio-footer {
+  position: absolute;
+  bottom: 35px;
+  padding-bottom: 25px;
+  width: 100%;
+}
+
+.portfolio-footer .icon {
+  display: inline-block;
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+}
+
+footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  background-color: rgba(0,0,0,.70);
+  padding: 5px;
+  border: 1px solid rgb(107, 107, 107);
+}
+
+footer a {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio-footer {
+    z-index: -1;
+  }
+}
