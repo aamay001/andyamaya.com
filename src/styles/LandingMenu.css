@@ -10,7 +10,7 @@
 .portfolio-landing-menu {
   display: block;
   color: white;
-  width: 400px;
+  width: 460px;
   margin: 310px auto auto auto;
   -webkit-box-shadow: inset 1px 1px 0 rgba(158,205,215,0.1), 0 0 30px rgba(0,0,0,0.7);
   box-shadow: inset 1px 1px 0 rgba(158,205,215,0.1), 0 0 30px rgba(0,0,0,0.7);
@@ -86,6 +86,19 @@
 
   .portfolio-landing-menu {
     margin-top: 3%;
+    width: 400px;
+  }
+
+  .portfolio-landing-menu .website-title h1 {
+    font-size: 50px;
+  }
+
+  .collapsing-menu {
+    display: block !important;
+  }
+
+  .github-corner {
+    display: none;
   }
 }
 

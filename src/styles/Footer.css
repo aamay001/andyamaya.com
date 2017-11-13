@@ -3,26 +3,44 @@
   bottom: 35px;
   padding-bottom: 25px;
   width: 100%;
+  color: white;
 }
 
 .portfolio-footer .icon {
   display: inline-block;
   text-align: center;
-  padding: 5px 10px 5px 10px;
+  margin: 0;
+}
+
+.portfolio-footer .icon:hover {
+  background-color: rgba(107, 107, 107, .55)
 }
 
 footer {
   display: block;
+  padding: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
+  width: fit-content;
   background-color: rgba(0,0,0,.70);
-  padding: 5px;
   border: 1px solid rgb(107, 107, 107);
+  color: white;
+  font-size: 12px;
+}
+
+footer:hover {
+  border-color: white;
+}
+
+p {
+  padding: 10px 0 10px 0;
 }
 
 footer a {
   display: inline-block;
+  margin: 0;
+  padding: 10px 15px 10px 15px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {

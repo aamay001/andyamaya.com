@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import '../styles/Footer.css'
 
-import {footer} from '../config/profile.js'
+import profile from '../config/profile.js'
+const {footer} = profile;
 
 export default class Footer extends Component {
   render() {
@@ -31,6 +32,7 @@ export default class Footer extends Component {
             </a>
           </div>
         </footer>
+        <p>designed by Andy Amaya</p>
       </div>
     )
   }
