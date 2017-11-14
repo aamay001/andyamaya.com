@@ -1,9 +1,7 @@
 .portfolio-footer {
-  position: absolute;
-  bottom: 35px;
-  padding-bottom: 25px;
   width: 100%;
   color: white;
+  bottom: 0;
 }
 
 .portfolio-footer .icon {
@@ -37,7 +35,7 @@ p {
 }
 
 footer a {
-  display: inline-block;
+  display: block;
   margin: 0;
   padding: 10px 15px 10px 15px;
   width: 100%;
@@ -45,6 +43,6 @@ footer a {
 
 @media only screen and (max-width: 768px) {
   .portfolio-footer {
-    z-index: -1;
+    position: static;
   }
 }

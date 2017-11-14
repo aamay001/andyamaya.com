@@ -21,7 +21,7 @@ export default class Footer extends Component {
           </div>
 
           <div className="github-icon icon">
-            <a href={footer.github} target="_new">
+            <a href={footer.github} target="new">
               <svg style={{
                 width: '50px',
                 height: '50px'
@@ -32,7 +32,7 @@ export default class Footer extends Component {
             </a>
           </div>
         </footer>
-        <p>designed by Andy Amaya</p>
+        <p>created by Andy Amaya</p>
       </div>
     )
   }

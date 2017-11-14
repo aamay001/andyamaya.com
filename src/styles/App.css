@@ -1,0 +1,19 @@
+.App {
+  background-color: rgba(20, 26, 56, 0.60);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: scroll;
+}
+
+.App::-webkit-scrollbar {
+  display: none;
+}
+
+.App::-moz-scrollbars {
+  display: none;
+}
+
+
+
