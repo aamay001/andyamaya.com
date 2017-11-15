@@ -1,3 +1,5 @@
+import imNextLogo from '../assets/imnextlogo.png';
+
 export default {
   landing: {
     title:'\'Andy Amaya\';',
@@ -47,6 +49,21 @@ export default {
     otherString2VarName: 'get',
     otherString2: 'https://goo.gl/EQ3DzF'
   },
+  projects: [
+    {
+      name: 'imNext',
+      scope: 'Full Stack',
+      stack: 'MongoDB, Express, React + Redux, Node',
+      devOps: 'Travis CI, GitHub, Netlify, Heroku, Mocha, Jest, Babel',
+      description: 'imNext is an appointment scheduling system. It features an automated availability generator, self-service appointment scheduling, two-step human validation for appointments and registration, and a mobile centric minimal design focused on functionality.',
+      apis: 'Twilio SMS, Google reCAPTCHA2',
+      image: imNextLogo,
+      imageAlt: `The imNext logo.`,
+      livePage: 'https://imNext.online',
+      serverRepo: 'https://github.com/aamay001/imnext-api',
+      clientRepo: 'https://github.com/aamay001/imnext-client',
+    }
+  ],
   footer: {
     linkedIn: 'https://linkedin.com/in/andyamaya',
     gitHub: 'https://github.com/aamay001/andyamaya.com'
