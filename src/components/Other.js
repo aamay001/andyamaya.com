@@ -17,6 +17,7 @@ export class Other extends Component {
     this.props.dispatch(actions.setHeaderText('fetch(\'other\');'));
     setTimeout(() => {
       this.setState({okayToRender:true});
+      this.props.dispatch(actions.menuSelection(2))
       this.props.dispatch(actions.showingPage());
       this.props.dispatch(actions.setHeaderText('{other}'));
     }, 1500);

@@ -17,6 +17,7 @@ export class About extends Component {
     this.props.dispatch(actions.setHeaderText('fetch(\'about\');'));
     setTimeout(() => {
       this.setState({okayToRender:true});
+      this.props.dispatch(actions.menuSelection(0))
       this.props.dispatch(actions.showingPage());
       this.props.dispatch(actions.setHeaderText('{about}'));
     }, 1500);

@@ -2,8 +2,11 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import '../styles/Menu.css';
 import * as actions from '../state/actions';
+import {ROUTES} from '../config/constants';
 import profile from '../config/profile'
+import {Link} from 'react-router-dom';
 const {landing} = profile;
+console.log(ROUTES)
 
 export class Menu extends Component {
   onMenuOptionClicked = e => {
@@ -29,7 +32,7 @@ export class Menu extends Component {
         value={index}
         className="menu-option"
         onClick={this.onMenuOptionClicked}
-      >fetch(<span className="literal">'{option}'</span>);</li>
+      ><Link to={Object.keys(ROUTES)[index].toLocaleLowerCase()} >fetch(<span className="literal">'{option}'</span>);</Link></li>
     );
 
     return (

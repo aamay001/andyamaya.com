@@ -14,6 +14,7 @@ export class Projects extends Component {
     this.props.dispatch(actions.setHeaderText('fetch(\'projects\');'));
     setTimeout(() => {
       this.setState({okayToRender:true});
+      this.props.dispatch(actions.menuSelection(1))
       this.props.dispatch(actions.showingPage());
       this.props.dispatch(actions.setHeaderText('[...projects]'));
     }, 1500);

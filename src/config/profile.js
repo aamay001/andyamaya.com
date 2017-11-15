@@ -49,6 +49,6 @@ export default {
   },
   footer: {
     linkedIn: 'https://linkedin.com/in/andyamaya',
-    github: 'https://github.com/aamay001'
+    gitHub: 'https://github.com/aamay001/andyamaya.com'
   }
 }
