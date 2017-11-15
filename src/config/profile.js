@@ -1,4 +1,7 @@
 import imNextLogo from '../assets/imnextlogo.png';
+import tellMeOnDateLogo from '../assets/tellmeondatelogo.png';
+import resumeJsLogo from '../assets/resumejslogo.png';
+import citiDashBoardLogo from '../assets/citidashboardlogo.png';
 
 export default {
   landing: {
@@ -51,10 +54,10 @@ export default {
   },
   projects: [
     {
-      name: 'imNext',
+      name: 'imNext.online',
       scope: 'Full Stack',
       stack: 'MongoDB, Express, React + Redux, Node',
-      devOps: 'Travis CI, GitHub, Netlify, Heroku, Mocha, Jest, Babel',
+      devOps: 'Travis CI, GitHub, Netlify, Heroku, Mocha, Chai, Jest, Babel',
       description: 'imNext is an appointment scheduling system. It features an automated availability generator, self-service appointment scheduling, two-step human validation for appointments and registration, and a mobile centric minimal design focused on functionality.',
       apis: 'Twilio SMS, Google reCAPTCHA2',
       image: imNextLogo,
@@ -62,6 +65,42 @@ export default {
       livePage: 'https://imNext.online',
       serverRepo: 'https://github.com/aamay001/imnext-api',
       clientRepo: 'https://github.com/aamay001/imnext-client',
+    },
+    {
+      name: 'resumeJS',
+      scope: 'Font End',
+      stack: 'React + Redux',
+      devOps: 'Travis CI, GitHub, Netlify, Jest, Enzyme',
+      description: 'resumeJS is a client side application that helps users create their resume using JavaScript and JSON. It features a simplistic layout to make creating a resume much easier. The resume can be reordered and customized with different fonts.',
+      apis: 'Local Storage',
+      image: resumeJsLogo,
+      imageAlt: `The resumeJS logo.`,
+      livePage: 'https://resumejs.netlify.com/',
+      projectRepo: 'https://github.com/aamay001/react-resume',
+    },
+    {
+      name: 'TellMeonDate',
+      scope: 'Full Stack',
+      stack: 'MongoDB, Express, jQuery, Node',
+      devOps: 'Travis CI, GitHub, Heroku, Mocha, Chai',
+      description: 'TellMeonDate is a reminder application. User\'s can register for an account and create reminders. The user will receive a text message with the reminder text at the time to be reminded.',
+      apis: 'Twilio SMS, Google reCAPTCHA2',
+      image: tellMeOnDateLogo,
+      imageAlt: `The TellMeonDate logo.`,
+      livePage: 'http://tellmeon.date',
+      projectRepo: 'https://github.com/aamay001/reminder-app',
+    },
+    {
+      name: 'City Dashboard',
+      scope: 'Front End',
+      stack: 'HTML, JavaScript, CSS, jQuery',
+      devOps: 'GitHub, GitHub Pages',
+      description: 'City Dashboard is an informational page that allows users discover points of interest for any city in the world. With the use of several API\'s, the application quickly presents the user with a great selection of information and displays it using a beautiful Material design.',
+      apis: 'Local Storage, Geolocation, AccuWeather, FourSquare, Google Maps, Google Places, Materialize, Unsplash',
+      image: citiDashBoardLogo,
+      imageAlt: `The City Dashboard logo.`,
+      livePage: 'https://aamay001.github.io/city-dashboard/',
+      projectRepo: 'https://github.com/aamay001/city-dashboard',
     }
   ],
   footer: {

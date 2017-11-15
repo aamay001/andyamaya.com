@@ -17,9 +17,12 @@ export default (props) => {
       { project.clientRepo ?
         <p><span className="func">clientRepo</span>: <span className="literal"><a href={project.clientRepo} target="_blank" >() <span className="arrow">=></span> {project.clientRepo}</a></span>,</p>
         : ''}
-        { project.serverRepo ?
-          <p><span className="func">serverRepo</span>: <span className="literal"><a href={project.serverRepo} target="_blank" >() <span className="arrow">=></span> {project.serverRepo}</a></span>,</p>
-        : ''}
+      { project.serverRepo ?
+        <p><span className="func">serverRepo</span>: <span className="literal"><a href={project.serverRepo} target="_blank" >() <span className="arrow">=></span> {project.serverRepo}</a></span>,</p>
+      : ''}
+      { project.projectRepo ?
+        <p><span className="func">projectRepo</span>: <span className="literal"><a href={project.projectRepo} target="_blank" >() <span className="arrow">=></span> {project.projectRepo}</a></span>,</p>
+      : ''}
       <p><span className="func">livePage</span>: <span className="literal"><a href={project.livePage} target="_blank" >() <span className="arrow">=></span> {project.livePage}</a></span></p>
       <i>{'},'}</i>
     </div>
