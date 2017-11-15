@@ -36,7 +36,6 @@ export class Menu extends Component {
     );
 
     return (
-
           <div className="collapsing-menu"
             onMouseEnter={this.onMouseEnter}
             onMouseLeave={this.onMouseLeave}

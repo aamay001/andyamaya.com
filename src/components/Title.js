@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import '../styles/Title.css';
 import {connect} from 'react-redux';
+import {withRouter} from 'react-router-dom';
 import TypedHeader from './TypedHeader';
 import * as actions from '../state/actions';
+import {ROUTES} from '../config/constants';
 import profile from '../config/profile'
 const {landing} = profile;
 
@@ -23,6 +25,7 @@ export class Title extends Component {
       if( this.props.showingPage ) {
         this.props.dispatch(actions.setHeaderText(landing.title));
         this.props.dispatch(actions.noSelection());
+        this.props.history.push(ROUTES.LANDING);
         return;
       } else if ( !this.props.showMenuOptions ) {
         this.props.dispatch(actions.showMenu());
@@ -40,7 +43,7 @@ export class Title extends Component {
 
   render() {
     return (
-      <div className={`portfolio-landing-menu ${this.props.showingPage ? 'page-shown' : undefined}`}
+      <div className={`portfolio-landing-menu ${this.props.showingPage ? 'page-shown' : ''}`}
         onMouseEnter={this.onMouseEnter}
         onMouseLeave={this.onMouseLeave}
         onClick={this.onClickTitle}>
@@ -62,4 +65,4 @@ const mapStateToProps = state => ({
   showingPage: state.showingPage
 });
 
-export default connect(mapStateToProps)(Title);
+export default withRouter(connect(mapStateToProps)(Title));
