@@ -24,7 +24,7 @@ const menuSelection = (state, action) => {
 const toggleMenu = (state, show) => {
   return {
     ...state,
-    showMenuOptions: show
+    showMenuOptions: show,
   };
 }
 

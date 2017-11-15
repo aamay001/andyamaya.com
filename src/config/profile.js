@@ -27,7 +27,7 @@ export default {
   contact : {
     message: 'Thanks again for checking out my portfolio! Here\'s how you can get in touch with me.',
     email: 'contact@andyamaya.com',
-    linkedIn: 'https://www.linkedin.com/in/andyamaya',
+    linkedIn: 'https://linkedin.com/in/andyamaya',
     gitHub: 'https://github.com/aamay001',
     twitter: 'https://twitter.com/aamay001',
     instagram: 'https://instagram.com/aamay001'

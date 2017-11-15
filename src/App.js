@@ -20,7 +20,10 @@ const {ROUTES} = constants;
 export class App extends Component {
   onClick = e => {
     e.stopPropagation();
-    if (this.props.showingPage) {
+    if (this.props.showMenuOptions) {
+      this.props.dispatch(actions.hideMenu());
+    }
+    else if (this.props.showingPage) {
       this.props.dispatch(actions.setHeaderText(profile.landing.title));
       this.props.dispatch(actions.noSelection());
       this.props.history.push(ROUTES.LANDING);
@@ -33,7 +36,8 @@ export class App extends Component {
           <Title />
           <p style={{
             display: !this.props.showMenuOptions && !this.props.showingPage ? 'block': 'none',
-            marginTop: '-20px'
+            marginTop: '-20px',
+            color: 'aqua'
           }}>touch above to open commands</p>
           { this.props.showMenuOptions ? <Menu /> : '' }
           <Route exact path={ROUTES.ABOUT} component={About}/>

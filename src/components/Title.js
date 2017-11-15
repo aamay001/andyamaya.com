@@ -19,7 +19,7 @@ export class Title extends Component {
       ( this.props.showingPage !== nextProps.showingPage );
   }
 
-  onClickTitle = e => {
+  onClickTitle = (e) => {
     e.stopPropagation();
     setTimeout(() => {
       if( this.props.showingPage ) {
@@ -34,10 +34,12 @@ export class Title extends Component {
   }
 
   onMouseEnter = e => {
+    e.stopPropagation();
     this.props.dispatch(actions.showMenu());
   }
 
   onMouseLeave = e => {
+    e.stopPropagation();
     this.props.dispatch(actions.hideMenu());
   }
 
@@ -46,6 +48,8 @@ export class Title extends Component {
       <div className={`portfolio-landing-menu ${this.props.showingPage ? 'page-shown' : ''}`}
         onMouseEnter={this.onMouseEnter}
         onMouseLeave={this.onMouseLeave}
+        onTouchStart={e => e.stopPropagation()}
+        onTouchEnd={e => e.stopPropagation()}
         onClick={this.onClickTitle}>
         <div className={`website-title`}
           style={{
