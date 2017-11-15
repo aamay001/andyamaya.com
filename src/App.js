@@ -8,7 +8,7 @@ import Menu from './components/Menu';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import Resume from './components/Resume';
+import Other from './components/Other';
 import Footer from './components/Footer';
 
 import * as constants from './config/constants';
@@ -35,7 +35,7 @@ export class App extends Component {
           { this.props.showPage[constants.ABOUT] ? <About /> :
             this.props.showPage[constants.PROJECTS] ? <Projects /> :
             this.props.showPage[constants.CONTACT] ? <Contact /> :
-            this.props.showPage[constants.RESUME] ? <Resume /> : '' }
+            this.props.showPage[constants.OTHER] ? <Other /> : '' }
           <Footer />
         </div>
     );

@@ -18,9 +18,7 @@ export class Title extends Component {
   }
 
   onClickTitle = e => {
-    e.nativeEvent.stopImmediatePropagation();
     e.stopPropagation();
-
     setTimeout(() => {
       if( this.props.showingPage ) {
         this.props.dispatch(actions.setHeaderText(landing.title));
@@ -51,7 +49,7 @@ export class Title extends Component {
             backgroundColor: this.props.showMenuOptions ? 'black' : undefined
           }}>
           <TypedHeader strings={[this.props.headerText]}/>
-          <em>{landing.phrase}</em>
+          <em>'<span className="literal">{landing.phrase}</span>';</em>
         </div>
       </div>
     )

@@ -32,6 +32,10 @@
   background-color: rgba(107, 107, 107, .55);
 }
 
+.collapsing-menu span.literal {
+  color: orange;
+}
+
 .page-shown {
   margin-top: 20px;
 }

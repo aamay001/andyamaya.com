@@ -20,6 +20,10 @@ body {
   height: 100%;
 }
 
+span.literal {
+  color: cyan;
+}
+
 @media only screen and (max-width: 768px) {
   body {
     background-size: 100%

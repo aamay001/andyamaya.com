@@ -29,7 +29,7 @@ export class Menu extends Component {
         value={index}
         className="menu-option"
         onClick={this.onMenuOptionClicked}
-      >{option}</li>
+      >fetch(<span className="literal">'{option}'</span>);</li>
     );
 
     return (
@@ -37,6 +37,7 @@ export class Menu extends Component {
           <div className="collapsing-menu"
             onMouseEnter={this.onMouseEnter}
             onMouseLeave={this.onMouseLeave}
+            onClick={e => e.stopPropagation() }
             style={{
               display: (this.props.showMenuOptions ? 'block' : 'none')
             }}>

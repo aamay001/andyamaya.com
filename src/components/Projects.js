@@ -15,8 +15,8 @@ export class Projects extends Component {
     setTimeout(() => {
       this.setState({okayToRender:true});
       this.props.dispatch(actions.showingPage());
-      this.props.dispatch(actions.setHeaderText('[projects]'));
-    }, 2000);
+      this.props.dispatch(actions.setHeaderText('[...projects]'));
+    }, 1500);
   }
 
   componentWillUnmount() {
@@ -28,9 +28,10 @@ export class Projects extends Component {
   render () {
     return (
       <div className="projects-page"
-      style={{
-        display: this.props.showPage[PROJECTS] && this.state.okayToRender ? 'block' : 'none',
-      }}>
+        onClick={e => e.stopPropagation() }
+        style={{
+          display: this.props.showPage[PROJECTS] && this.state.okayToRender ? 'block' : 'none',
+        }}>
       THE PROJECTS PAGE
     </div>
     )

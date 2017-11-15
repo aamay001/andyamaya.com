@@ -4,12 +4,60 @@
   box-shadow: inset 1px 1px 0 rgba(158,205,215,0.1), 0 0 30px rgba(0,0,0,0.7);
   background-color: rgba(0,0,0,.70);
   border: 1px solid rgb(107, 107, 107);
+  padding: 20px;
   width: 750px;
-  height: 550px;
+  text-align: left;
 }
+
+.contact-page h2 {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.contact-page p {
+  font-size: 15px;
+  line-height: 20px;
+  margin-left: 40px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.contact-page a {
+  color: rgb(221, 35, 60);
+  text-decoration: none;
+}
+
+.contact-page span.const {
+  color: dodgerblue;
+}
+
+.contact-page span.prop {
+  color: skyblue;
+}
+
+.contact-page span.arrow {
+  color: dodgerblue;
+}
+
+.contact-page span.func {
+  color: rgb(213, 238, 99)
+}
+
+.contact-page span.literal {
+  color: orange;
+}
+
 
 @media only screen and (max-width: 768px) {
   .contact-page {
     width: 100%;
+  }
+
+  .contact-page p {
+    font-size: 15px;
+    line-height: 15px;
+    margin-left: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 }

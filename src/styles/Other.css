@@ -1,4 +1,4 @@
-.about-page {
+.other-page {
   margin: 25px auto 25px auto;
   -webkit-box-shadow: inset 1px 1px 0 rgba(158,205,215,0.1), 0 0 30px rgba(0,0,0,0.7);
   box-shadow: inset 1px 1px 0 rgba(158,205,215,0.1), 0 0 30px rgba(0,0,0,0.7);
@@ -9,12 +9,12 @@
   text-align: left;
 }
 
-.about-page h2 {
+.other-page h2 {
   font-size: 15px;
   line-height: 20px;
 }
 
-.about-page p {
+.other-page p {
   font-size: 15px;
   line-height: 20px;
   margin-left: 40px;
@@ -22,28 +22,42 @@
   margin-top: 0;
 }
 
-.about-page span.const {
+.other-page img {
+  width: 75%;
+}
+
+.other-page span.const {
   color: dodgerblue;
 }
 
-.about-page span.prop {
+.other-page span.prop {
   color: skyblue;
 }
 
-.about-page span.literal {
+.other-page span.literal {
   color: orange;
 }
 
-.about-page span.literalNumber {
-  color: rgb(253, 51, 253);
+.other-page span.arrow {
+  color: dodgerblue;
 }
 
+.other-page span.func {
+  color: rgb(213, 238, 99)
+}
+
+.other-page a {
+  color: rgb(221, 35, 60);
+  text-decoration: none;
+}
+
+
 @media only screen and (max-width: 768px) {
-  .about-page {
+  .other-page {
     width: 100%;
   }
 
-  .about-page p {
+  .other-page p {
     font-size: 15px;
     line-height: 15px;
     margin-left: 20px;
