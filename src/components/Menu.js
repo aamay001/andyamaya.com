@@ -2,10 +2,10 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {withRouter} from 'react-router-dom';
 
-import '../styles/Menu.css';
 import * as actions from '../state/actions';
 import {ROUTES} from '../config/constants';
 import profile from '../config/profile'
+import '../styles/Menu.css';
 
 const {landing} = profile;
 

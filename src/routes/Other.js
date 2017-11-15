@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import '../styles/Other.css';
+
 import {OTHER} from '../config/constants';
 import * as actions from '../state/actions';
-
 import profile from '../config/profile';
+import '../styles/Other.css';
+
 const {other} = profile;
 
 export class Other extends Component {

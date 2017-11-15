@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import './styles/App.css';
 import {connect} from 'react-redux';
-import * as actions from './state/actions';
 import { Route, withRouter } from 'react-router-dom';
 
 import Title from './components/Title';
 import Menu from './components/Menu';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Other from './components/Other';
+import About from './routes/About';
+import Projects from './routes/Projects';
+import Contact from './routes/Contact';
+import Other from './routes/Other';
 import Footer from './components/Footer';
 
 import * as constants from './config/constants';
+import * as actions from './state/actions';
 import profile from './config/profile';
+import './styles/App.css';
 
 const {ROUTES} = constants;
 

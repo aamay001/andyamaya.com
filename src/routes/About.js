@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import '../styles/About.css'
+import differenceInYears from 'date-fns/difference_in_years'
+
 import {ABOUT} from '../config/constants';
 import * as actions from '../state/actions';
-import differenceInYears from 'date-fns/difference_in_years'
 import profile from '../config/profile';
+import '../styles/About.css'
+
 const {about} = profile;
 
 export class About extends Component {

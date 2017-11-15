@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import Typed from 'typed.js';
+
 import '../styles/TypedHeader.css'
 
 export class TypedHeader extends Component {
@@ -18,8 +19,6 @@ export class TypedHeader extends Component {
   }
 
   componentWillUnmount() {
-  	// Make sure to destroy Typed instance on unmounting
-    // to prevent memory leaks
     this.typed.destroy();
   }
 
@@ -53,7 +52,6 @@ TypedHeader.defaultProps = {
 }
 
 const mapStateToProps = state => ({
-
 });
 
 export default connect(mapStateToProps)(TypedHeader);

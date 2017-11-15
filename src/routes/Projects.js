@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import '../styles/Projects.css';
+
 import * as actions from '../state/actions';
 import {PROJECTS} from '../config/constants';
+import '../styles/Projects.css';
 
 export class Projects extends Component {
   state = {

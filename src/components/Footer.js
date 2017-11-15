@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import '../styles/Footer.css'
 
 import profile from '../config/profile.js'
+import '../styles/Footer.css'
 const {footer} = profile;
 
 export default class Footer extends Component {

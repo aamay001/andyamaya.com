@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import '../styles/Contact.css';
+
 import * as actions from '../state/actions';
 import {CONTACT} from '../config/constants';
-
 import profile from '../config/profile';
+import '../styles/Contact.css';
+
 const {contact} = profile;
 
 export class Contact extends Component {

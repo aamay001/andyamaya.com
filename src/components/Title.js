@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
-import '../styles/Title.css';
 import {connect} from 'react-redux';
 import {withRouter} from 'react-router-dom';
+
 import TypedHeader from './TypedHeader';
 import * as actions from '../state/actions';
 import {ROUTES} from '../config/constants';
 import profile from '../config/profile'
+import '../styles/Title.css';
+
 const {landing} = profile;
 
 export class Title extends Component {
