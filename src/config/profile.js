@@ -68,7 +68,7 @@ export default {
     },
     {
       name: 'resumeJS',
-      scope: 'Font End',
+      scope: 'Front End',
       stack: 'React + Redux',
       devOps: 'Travis CI, GitHub, Netlify, Jest, Enzyme',
       description: 'resumeJS is a client side application that helps users create their resume using JavaScript and JSON. It features a simplistic layout to make creating a resume much easier. The resume can be reordered and customized with different fonts.',
