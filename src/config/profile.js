@@ -45,7 +45,7 @@ export default {
     otherString1: `['Xbox 360', 'PC']`,
     website: 'http://spoidsgame.com',
     otherString2VarName: 'get',
-    otherString2: 'http://store.steampowered.com/app/589640/Spoids/'
+    otherString2: 'https://goo.gl/EQ3DzF'
   },
   footer: {
     linkedIn: 'https://linkedin.com/in/andyamaya',
