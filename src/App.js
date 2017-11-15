@@ -25,6 +25,10 @@ export class App extends Component {
         this.props.dispatch(actions.noSelection());
       }
     });
+
+    if (window.innerWidth <= 768 ) {
+      this.props.dispatch(actions.showMenu());
+    }
   }
 
   componentWillUnmount() {
