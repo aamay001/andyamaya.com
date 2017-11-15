@@ -36,15 +36,11 @@ export class App extends Component {
             marginTop: '-20px'
           }}>touch above to open commands</p>
           { this.props.showMenuOptions ? <Menu /> : '' }
-            <Route exact path={ROUTES.ABOUT} component={About}/>
-            <Route exact path={ROUTES.PROJECTS} component={Projects}/>
-            <Route exact path={ROUTES.CONTACT} component={Contact}/>
-            <Route exact path={ROUTES.OTHER} component={Other}/>
-          {/*// { this.props.showPage[constants.ABOUT] ? <About /> :
-          //   this.props.showPage[constants.PROJECTS] ? <Projects /> :
-          //   this.props.showPage[constants.CONTACT] ? <Contact /> :
-          //   this.props.showPage[constants.OTHER] ? <Other /> : '' } */}
-            <Footer />
+          <Route exact path={ROUTES.ABOUT} component={About}/>
+          <Route exact path={ROUTES.PROJECTS} component={Projects}/>
+          <Route exact path={ROUTES.CONTACT} component={Contact}/>
+          <Route exact path={ROUTES.OTHER} component={Other}/>
+          <Footer />
         </div>
     );
   }
