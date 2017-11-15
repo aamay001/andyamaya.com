@@ -18,6 +18,19 @@ import './styles/App.css';
 const {ROUTES} = constants;
 
 export class App extends Component {
+  componentDidMount() {
+    window.addEventListener('popstate', (e) => {
+      if ( this.props.history.location.pathname === ROUTES.LANDING) {
+        this.props.dispatch(actions.setHeaderText(profile.landing.title));
+        this.props.dispatch(actions.noSelection());
+      }
+    });
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('popstate');
+  }
+
   onClick = e => {
     e.stopPropagation();
     if (this.props.showMenuOptions) {
