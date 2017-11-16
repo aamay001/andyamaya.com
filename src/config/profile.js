@@ -3,6 +3,7 @@ import tellMeOnDateLogo from '../assets/tellmeondatelogo.png';
 import resumeJsLogo from '../assets/resumejslogo.png';
 import citiDashBoardLogo from '../assets/citidashboardlogo.png';
 import portfolioLogo from '../assets/portfolioicon.png';
+import spoidsLogo from '../assets/spoidsLogo.png';
 
 export default {
   landing: {
@@ -40,7 +41,7 @@ export default {
   },
   other: {
     varName: 'spoids',
-    image: 'http://www.spoidsgame.com/wp-content/uploads/2012/03/LogoColored.png',
+    image: spoidsLogo,
     imageAlt: 'Spoids video game logo.',
     message: `'Spoids is a cool project that I worked on several years ago. It's a tower defense game that takes place in space.
     This project took about 2 years to complete with just two team members; myself included. Each of us wore several
