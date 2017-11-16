@@ -46,7 +46,7 @@ export class App extends Component {
 
   onClick = e => {
     e.stopPropagation();
-    if (this.props.showMenuOptions) {
+    if (this.props.showMenuOptions && window.innerWidth >= 768) {
       this.props.dispatch(actions.hideMenu());
     }
     else if (this.props.showingPage) {
