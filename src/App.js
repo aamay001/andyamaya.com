@@ -46,10 +46,10 @@ export class App extends Component {
 
   onClick = e => {
     e.stopPropagation();
-    if (this.props.showMenuOptions && window.innerWidth >= 768) {
+    if (this.props.showMenuOptions) {
       this.props.dispatch(actions.hideMenu());
     }
-    else if (this.props.showingPage) {
+    else if (this.props.showingPage ) {
       this.props.dispatch(actions.setHeaderText(profile.landing.title));
       this.props.dispatch(actions.noSelection());
       this.props.history.push(ROUTES.LANDING);
@@ -58,7 +58,10 @@ export class App extends Component {
 
   render() {
     return (
-        <div className="App" onClick={this.onClick}>
+        <div className="App"
+          onClick={this.onClick}
+          onTouchStart={e => e.stopPropagation()}
+          onTouchEnd={e => e.stopPropagation()}>
           <Title />
           <p style={{
             display: !this.props.showMenuOptions && !this.props.showingPage ? 'block': 'none',
