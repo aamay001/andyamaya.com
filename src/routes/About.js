@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import differenceInYears from 'date-fns/difference_in_years'
 
-import {ABOUT} from '../config/constants';
+import {ABOUT, PAGE_DELAY} from '../config/constants';
 import * as actions from '../state/actions';
 import profile from '../config/profile';
 import '../styles/About.css'
@@ -22,7 +22,7 @@ export class About extends Component {
       this.props.dispatch(actions.menuSelection(0))
       this.props.dispatch(actions.showingPage());
       this.props.dispatch(actions.setHeaderText('{about}'));
-    }, 1500);
+    }, PAGE_DELAY);
   }
 
   componentWillUnmount() {

@@ -26,8 +26,8 @@ export class TypedHeader extends Component {
     const {strings} = props;
     return {
       strings: strings,
-      typeSpeed: 50,
-      backSpeed: 50
+      typeSpeed: 30,
+      backSpeed: 30
     };
   }
 

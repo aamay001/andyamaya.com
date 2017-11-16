@@ -2,6 +2,7 @@ import imNextLogo from '../assets/imnextlogo.png';
 import tellMeOnDateLogo from '../assets/tellmeondatelogo.png';
 import resumeJsLogo from '../assets/resumejslogo.png';
 import citiDashBoardLogo from '../assets/citidashboardlogo.png';
+import portfolioLogo from '../assets/portfolioicon.png';
 
 export default {
   landing: {
@@ -63,8 +64,8 @@ export default {
       image: imNextLogo,
       imageAlt: `The imNext logo.`,
       livePage: 'https://imNext.online',
-      serverRepo: 'https://github.com/aamay001/imnext-api',
-      clientRepo: 'https://github.com/aamay001/imnext-client',
+      serverRepo: 'https://git.io/vF1Dn',
+      clientRepo: 'https://git.io/vF1DC',
     },
     {
       name: 'resumeJS',
@@ -76,7 +77,7 @@ export default {
       image: resumeJsLogo,
       imageAlt: `The resumeJS logo.`,
       livePage: 'https://resumejs.netlify.com/',
-      projectRepo: 'https://github.com/aamay001/react-resume',
+      projectRepo: 'https://git.io/vF1D8',
     },
     {
       name: 'TellMeonDate',
@@ -88,7 +89,7 @@ export default {
       image: tellMeOnDateLogo,
       imageAlt: `The TellMeonDate logo.`,
       livePage: 'http://tellmeon.date',
-      projectRepo: 'https://github.com/aamay001/reminder-app',
+      projectRepo: 'https://git.io/vF1DB',
     },
     {
       name: 'City Dashboard',
@@ -100,7 +101,19 @@ export default {
       image: citiDashBoardLogo,
       imageAlt: `The City Dashboard logo.`,
       livePage: 'https://aamay001.github.io/city-dashboard/',
-      projectRepo: 'https://github.com/aamay001/city-dashboard',
+      projectRepo: 'https://git.io/vF1DR',
+    },
+    {
+      name: 'JavaScript Portfolio',
+      scope: 'Front End',
+      stack: 'React + Redux',
+      devOps: 'GitHub, Netlify, Netlify CI',
+      description: 'This entry is for the website you are currently on. This was a small project to create a portlofio. I decided to use React & Redux to develop this portfolio and created it with a profile object that can easily be replaced to make it your own.',
+      apis: 'History, Typed.js',
+      image: portfolioLogo,
+      imageAlt: `The City Dashboard logo.`,
+      livePage: 'https://andyamaya.com',
+      projectRepo: 'https://git.io/vF1ST',
     }
   ],
   footer: {

@@ -50,3 +50,13 @@
 span.literal {
   color: dodgerblue;
 }
+
+@media only screen and (max-width: 768px) {
+  .portfolio-landing-menu {
+    margin-top: 20%;
+    width: 100%;
+    display: block;
+  }
+}
+
+

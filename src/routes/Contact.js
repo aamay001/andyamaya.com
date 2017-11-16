@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 
 import * as actions from '../state/actions';
-import {CONTACT} from '../config/constants';
+import {CONTACT, PAGE_DELAY} from '../config/constants';
 import profile from '../config/profile';
 import '../styles/Contact.css';
 
@@ -21,7 +21,7 @@ export class Contact extends Component {
       this.props.dispatch(actions.menuSelection(3))
       this.props.dispatch(actions.showingPage());
       this.props.dispatch(actions.setHeaderText('{contact}'));
-    }, 1500);
+    }, PAGE_DELAY);
   }
 
   componentWillUnmount() {

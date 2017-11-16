@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 
 import * as actions from '../state/actions';
-import {PROJECTS} from '../config/constants';
+import {PROJECTS, PAGE_DELAY} from '../config/constants';
 import profile from '../config/profile';
 import Project from '../components/Project';
 import '../styles/Projects.css';
@@ -22,7 +22,7 @@ export class Projects extends Component {
       this.props.dispatch(actions.menuSelection(1))
       this.props.dispatch(actions.showingPage());
       this.props.dispatch(actions.setHeaderText('[...projects]'));
-    }, 1500);
+    }, PAGE_DELAY);
   }
 
   componentWillUnmount() {

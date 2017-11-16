@@ -55,12 +55,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .portfolio-landing-menu {
-    margin-top: 35%;
-    width: 100%;
-    display: block;
-  }
-
   .page-shown {
     margin-top: 1%;
   }

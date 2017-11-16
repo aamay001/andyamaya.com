@@ -7,6 +7,7 @@
   padding: 20px;
   width: 750px;
   text-align: left;
+  text-overflow: wrap;
 }
 
 .projects-page h2 {

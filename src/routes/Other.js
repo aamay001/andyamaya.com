@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 
-import {OTHER} from '../config/constants';
+import {OTHER, PAGE_DELAY} from '../config/constants';
 import * as actions from '../state/actions';
 import profile from '../config/profile';
 import '../styles/Other.css';
@@ -21,7 +21,7 @@ export class Other extends Component {
       this.props.dispatch(actions.menuSelection(2))
       this.props.dispatch(actions.showingPage());
       this.props.dispatch(actions.setHeaderText('{other}'));
-    }, 1500);
+    }, PAGE_DELAY);
   }
 
   componentWillUnmount() {
