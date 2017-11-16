@@ -1,2 +1,2 @@
-/downloads    /downloads   200
+/downloads/*    /downloads/*   200
 /*    /index.html   200
