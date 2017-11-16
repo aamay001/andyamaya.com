@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import differenceInYears from 'date-fns/difference_in_years'
 
 import {ABOUT, PAGE_DELAY} from '../config/constants';
 import * as actions from '../state/actions';
@@ -39,9 +38,7 @@ export class About extends Component {
           }}>
           <h2><span className="const">const</span> about = {'{'}</h2>
             <p><span className="prop">firstName</span>: <span className="literal">'{about.firstName}'</span>,</p>
-            <p><span className="prop">middleName</span>: <span className="literal">'{about.middleName}'</span>,</p>
             <p><span className="prop">lastName</span>: <span className="literal">'{about.lastName}'</span>,</p>
-            <p><span className="prop">age</span>: <span className="literalNumber">{differenceInYears(new Date(), about.birthDate)}</span>,</p>
             <p><span className="prop">location</span>: <span className="literal">'{about.location}'</span>,</p>
             <p><span className="prop">brief</span>: <span className="literal">'{about.brief}'</span></p>
           <h2>{'};'}</h2>

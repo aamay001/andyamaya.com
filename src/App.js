@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import { Route, withRouter } from 'react-router-dom';
+import { Route, withRouter, Switch } from 'react-router-dom';
 
 import Title from './components/Title';
 import Menu from './components/Menu';
@@ -66,10 +66,13 @@ export class App extends Component {
             color: 'aqua'
           }}>touch above to open commands</p>
           { this.props.showMenuOptions ? <Menu /> : '' }
+          <Switch>
           <Route exact path={ROUTES.ABOUT} component={About}/>
           <Route exact path={ROUTES.PROJECTS} component={Projects}/>
           <Route exact path={ROUTES.CONTACT} component={Contact}/>
           <Route exact path={ROUTES.OTHER} component={Other}/>
+          <Route component={() => ''} />
+          </Switch>
           <Footer />
         </div>
     );

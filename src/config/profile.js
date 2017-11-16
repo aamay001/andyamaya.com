@@ -18,9 +18,7 @@ export default {
   },
   about: {
     firstName: 'Andy',
-    middleName: 'Steve',
     lastName: 'Amaya',
-    birthDate: '05/02/1988',
     location: 'Greater Los Angeles',
     brief: `Hi, I'm Andy! Thanks for stopping by my portfolio page! A bit about me: I've been working in I.T. for over
     8 years. I was previously a Database Analyst and decided that it was time to pursue my dream of becoming
