@@ -63,10 +63,11 @@
     display: block;
     width: 100%;
   }
+}
 
-  .portfolio-landing-menu .website-title h1 {
-    font-size: 35px;
-    text-align: center;
+@media only screen and (max-width: 320px) {
+  .collapsing-menu ul li {
+    font-size: 13px;
   }
 }
 

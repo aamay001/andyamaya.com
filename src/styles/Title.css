@@ -59,4 +59,13 @@ span.literal {
   }
 }
 
+@media only screen and (max-width: 320px) {
+  .portfolio-landing-menu .website-title h1 {
+    font-size: 27px;
+  }
+
+  .portfolio-landing-menu .website-title em {
+    font-size: 14px;
+  }
+}
 
