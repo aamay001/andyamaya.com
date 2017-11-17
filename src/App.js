@@ -34,8 +34,11 @@ export class App extends Component {
   }
 
   openMenuIfMobile() {
-    if (window.innerWidth <= 768 &&
-      this.props.history.location.pathname === ROUTES.LANDING) {
+    if ( window.innerWidth <= 768 ) {
+      this.props.dispatch(actions.showMenu());
+      return;
+    }
+    if (this.props.history.location.pathname === ROUTES.LANDING) {
       this.props.dispatch(actions.showMenu());
     }
   }
@@ -46,6 +49,12 @@ export class App extends Component {
 
   onClick = e => {
     e.stopPropagation();
+
+    if ( window.innerWidth <= 768 ) {
+      this.props.dispatch(actions.showMenu());
+      return;
+    }
+
     if (this.props.showMenuOptions) {
       this.props.dispatch(actions.hideMenu());
     }
