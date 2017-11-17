@@ -42,6 +42,9 @@ export class Title extends Component {
 
   onMouseLeave = e => {
     e.stopPropagation();
+    if (window.innerWidth <= 768) {
+      return;
+    }
     this.props.dispatch(actions.hideMenu());
   }
 

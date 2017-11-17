@@ -38,9 +38,6 @@ export class App extends Component {
       this.props.dispatch(actions.showMenu());
       return;
     }
-    if (this.props.history.location.pathname === ROUTES.LANDING) {
-      this.props.dispatch(actions.showMenu());
-    }
   }
 
   componentWillUnmount() {
