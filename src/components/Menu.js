@@ -32,11 +32,13 @@ export class Menu extends Component {
       >fetch(<span className="literal">'{option}'</span>);</li>
     );
     return (
-      <div className="collapsing-menu">
-        <ul>
-          {menuOptions}
-        </ul>
-      </div>
+      <nav>
+        <div className="collapsing-menu">
+          <ul>
+            {menuOptions}
+          </ul>
+        </div>
+      </nav>
     )
   }
 }
