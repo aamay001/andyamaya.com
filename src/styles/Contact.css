@@ -29,6 +29,10 @@
   text-overflow: ellipsis;
 }
 
+.contact-page a:hover {
+  color:white;
+}
+
 .contact-page span.const {
   color: dodgerblue;
 }

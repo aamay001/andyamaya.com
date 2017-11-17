@@ -40,12 +40,18 @@
   padding-top: 35px;
 }
 
+
 .portfolio-landing-menu .website-title em {
   display: inline-block;
   width: 100%;
   line-height: 50px;
   height: 100%;
 }
+
+.portfolio-landing-menu .website-title em:hover{
+  color: white;
+}
+
 
 span.literal {
   color: dodgerblue;

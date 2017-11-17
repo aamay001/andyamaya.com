@@ -41,6 +41,10 @@
   text-decoration: none;
 }
 
+.projects-page a:hover {
+  color: white;
+}
+
 
 @media only screen and (max-width: 768px) {
   .projects-page {
