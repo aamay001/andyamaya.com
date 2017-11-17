@@ -66,7 +66,7 @@
 
 @media only screen and (max-width: 320px ){
   .contact-page a {
-    width: 155px;
+    width: 145px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

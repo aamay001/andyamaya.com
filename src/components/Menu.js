@@ -21,19 +21,6 @@ export class Menu extends Component {
     }
   }
 
-  onMouseEnter = (e) => {
-    e.stopPropagation();
-    this.props.dispatch(actions.showMenu());
-  }
-
-  onMouseLeave = (e) => {
-    e.stopPropagation();
-    if (window.innerWidth <= 768) {
-      return;
-    }
-    this.props.dispatch(actions.hideMenu());
-  }
-
   render() {
     const menuOptions = landing.menuOptions.map( (option, index) =>
       <li key={index}
@@ -45,12 +32,7 @@ export class Menu extends Component {
       >fetch(<span className="literal">'{option}'</span>);</li>
     );
     return (
-      <div className="collapsing-menu"
-        onMouseEnter={this.onMouseEnter}
-        onMouseLeave={this.onMouseLeave}
-        style={{
-          display: (this.props.showMenuOptions ? 'block' : 'none')
-        }}>
+      <div className="collapsing-menu">
         <ul>
           {menuOptions}
         </ul>
@@ -60,7 +42,6 @@ export class Menu extends Component {
 }
 
 const mapStateToProps = state => ({
-  showMenuOptions: state.showMenuOptions,
   showingPage: state.showingPage,
   headerText: state.headerText,
 });

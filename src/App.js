@@ -11,61 +11,14 @@ import Other from './routes/Other';
 import Footer from './components/Footer';
 
 import * as constants from './config/constants';
-import * as actions from './state/actions';
-import profile from './config/profile';
 import './styles/App.css';
 
 const {ROUTES} = constants;
 
 export class App extends Component {
-  componentDidMount() {
-
-    window.addEventListener('popstate', (e) => {
-      if ( this.props.history.location.pathname === ROUTES.LANDING) {
-        this.props.dispatch(actions.setHeaderText(profile.landing.title));
-        this.props.dispatch(actions.noSelection());
-      }
-    });
-    this.openMenuIfMobile();
-  }
-
-  componentDidUpdate(prevProps, prevState) {
-    this.openMenuIfMobile();
-  }
-
-  openMenuIfMobile() {
-    if ( window.innerWidth <= 768 ) {
-      this.props.dispatch(actions.showMenu());
-      return;
-    }
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('popstate');
-  }
-
-  onClick = e => {
-    e.stopPropagation();
-
-    if ( window.innerWidth <= 768 ) {
-      this.props.dispatch(actions.showMenu());
-      return;
-    }
-
-    if (this.props.showMenuOptions) {
-      this.props.dispatch(actions.hideMenu());
-    }
-    else if (this.props.showingPage ) {
-      this.props.dispatch(actions.setHeaderText(profile.landing.title));
-      this.props.dispatch(actions.noSelection());
-      this.props.history.push(ROUTES.LANDING);
-    }
-  }
-
   render() {
     return (
         <div className="App"
-          onClick={this.onClick}
           onTouchStart={e => e.stopPropagation()}
           onTouchEnd={e => e.stopPropagation()}>
           <Title />

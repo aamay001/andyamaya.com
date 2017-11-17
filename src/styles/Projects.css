@@ -56,12 +56,18 @@
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 376px) {
   .projects-page a {
-    width: 130px;
+    width: 165px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .projects-page a {
+    width: 115px;
   }
 }

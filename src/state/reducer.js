@@ -2,7 +2,7 @@ import * as actions from './actions';
 
 const initialState = {
   headerText: '',
-  showMenuOptions: false,
+  showMenuOptions: true,
   showingPage: false,
   showPage: [
     false, // About
@@ -21,19 +21,11 @@ const menuSelection = (state, action) => {
   };
 };
 
-const toggleMenu = (state, show) => {
-  return {
-    ...state,
-    showMenuOptions: show,
-  };
-}
-
 const noSelection = (state) => {
   const showingPage = false
   const showPage = [...initialState.showPage];
   return {
     ...state,
-    showMenuOptions: false,
     showingPage,
     showPage
   };
@@ -64,10 +56,6 @@ export default (state = initialState, action) => {
   switch(action.type) {
     case actions.MENU_SELECTION:
       return menuSelection(state, action)
-    case actions.SHOW_MENU:
-      return toggleMenu(state, true);
-    case actions.HIDE_MENU:
-      return toggleMenu(state, false);
     case actions.NO_SELECTION:
       return noSelection(state);
     case actions.SET_HEADER_TEXT:
