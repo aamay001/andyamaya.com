@@ -61,7 +61,10 @@ export class App extends Component {
           <Route exact path={ROUTES.PROJECTS} component={Projects}/>
           <Route exact path={ROUTES.CONTACT} component={Contact}/>
           <Route exact path={ROUTES.OTHER} component={Other}/>
-          <Route exact path={ROUTES.SPOIDS} component={Other}
+          <Route exact path={ROUTES.SPOIDS} component={Other} />
+          <Route exact path={ROUTES.EASY_DEPLOY} render={() => (
+            global.location = 'http://easydeploy.andyamaya.com'
+          )} />
           <Route component={() => ''} />
           </Switch>
           <Footer />

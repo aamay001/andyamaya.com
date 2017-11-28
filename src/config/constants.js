@@ -10,5 +10,6 @@ export const ROUTES = {
   OTHER: '/other',
   CONTACT: '/contact',
   LANDING: '/',
-  SPOIDS: '/spoids'
+  SPOIDS: '/spoids',
+  EASY_DEPLOY: '/easy-deploy'
 }
