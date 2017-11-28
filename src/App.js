@@ -61,6 +61,7 @@ export class App extends Component {
           <Route exact path={ROUTES.PROJECTS} component={Projects}/>
           <Route exact path={ROUTES.CONTACT} component={Contact}/>
           <Route exact path={ROUTES.OTHER} component={Other}/>
+          <Route exact path={ROUTES.SPOIDS} component={Other}
           <Route component={() => ''} />
           </Switch>
           <Footer />

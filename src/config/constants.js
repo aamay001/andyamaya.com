@@ -9,5 +9,6 @@ export const ROUTES = {
   PROJECTS: '/projects',
   OTHER: '/other',
   CONTACT: '/contact',
-  LANDING: '/'
+  LANDING: '/',
+  SPOIDS: '/spoids'
 }
