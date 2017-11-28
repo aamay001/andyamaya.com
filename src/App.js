@@ -19,7 +19,6 @@ const {ROUTES} = constants;
 
 export class App extends Component {
   componentDidMount() {
-
     window.addEventListener('popstate', (e) => {
       if ( this.props.history.location.pathname === ROUTES.LANDING) {
         this.props.dispatch(actions.setHeaderText(profile.landing.title));
