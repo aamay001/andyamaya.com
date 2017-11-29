@@ -8,6 +8,7 @@ import About from './routes/About';
 import Projects from './routes/Projects';
 import Contact from './routes/Contact';
 import Other from './routes/Other';
+import EasyDeploy from './routes/EasyDeploy';
 import Footer from './components/Footer';
 
 import * as constants from './config/constants';
@@ -21,8 +22,7 @@ export class App extends Component {
   componentDidMount() {
     window.addEventListener('popstate', (e) => {
       if ( this.props.history.location.pathname === ROUTES.LANDING) {
-        this.props.dispatch(actions.setHeaderText(profile.landing.title));
-        this.props.dispatch(actions.noSelection());
+        this.setHeader();
       }
     });
   }
@@ -37,10 +37,14 @@ export class App extends Component {
 
     }
     else if (this.props.showingPage ) {
-      this.props.dispatch(actions.setHeaderText(profile.landing.title));
-      this.props.dispatch(actions.noSelection());
+      this.setHeader();
       this.props.history.push(ROUTES.LANDING);
     }
+  }
+
+  setHeader() {
+    this.props.dispatch(actions.setHeaderText(profile.landing.title));
+    this.props.dispatch(actions.noSelection());
   }
 
   render() {
@@ -62,9 +66,7 @@ export class App extends Component {
           <Route exact path={ROUTES.CONTACT} component={Contact}/>
           <Route exact path={ROUTES.OTHER} component={Other}/>
           <Route exact path={ROUTES.SPOIDS} component={Other} />
-          <Route exact path={ROUTES.EASY_DEPLOY} render={() => (
-            global.location = 'http://easydeploy.andyamaya.com'
-          )} />
+          <Route exact path={ROUTES.EASY_DEPLOY} component={EasyDeploy} />
           <Route component={() => ''} />
           </Switch>
           <Footer />
