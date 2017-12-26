@@ -63,8 +63,8 @@ export default {
       image: imNextLogo,
       imageAlt: `The imNext logo.`,
       livePage: 'https://imNext.online',
-      serverRepo: 'https://git.io/vF1Dn',
-      clientRepo: 'https://git.io/vF1DC',
+      serverRepo: 'https://git.io/vb50y',
+      clientRepo: 'https://git.io/vb501',
     },
     {
       name: 'resumeJS',
