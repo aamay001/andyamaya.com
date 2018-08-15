@@ -87,7 +87,7 @@ export default {
       apis: 'Twilio SMS, Google reCAPTCHA2',
       image: tellMeOnDateLogo,
       imageAlt: `The TellMeonDate logo.`,
-      livePage: 'http://tellmeon.date',
+      livePage: 'https://tellmeondate.herokuapp.com/',
       projectRepo: 'https://git.io/vF1DB',
     },
     {
