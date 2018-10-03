@@ -40,10 +40,10 @@ export class Contact extends Component {
         <h2><span className="const">const</span> contact = {'{'}</h2>
         <p><span className="prop">message</span>: <span className="literal">'{contact.message}'</span>,</p>
         <p><span className="func">email</span>: <span className="literal"><a href={`mailto:${contact.email}`} >() <span className="arrow">=></span> {contact.email}</a></span>,</p>
-        <p><span className="func">linkedIn</span>: <span className="literal"><a href={contact.linkedIn} target="_blank">() <span className="arrow">=></span> {contact.linkedIn}</a></span>,</p>
-        <p><span className="func">gitHub</span>: <span className="literal"><a href={contact.gitHub} target="_blank">() <span className="arrow">=></span> {contact.gitHub}</a></span>,</p>
-        <p><span className="func">twitter</span>: <span className="literal"><a href={contact.twitter} target="_blank">() <span className="arrow">=></span> {contact.twitter}</a></span>,</p>
-        <p><span className="func">instagram</span>: <span className="literal"><a href={contact.instagram} target="_blank">() <span className="arrow">=></span> {contact.instagram}</a></span></p>
+        <p><span className="func">linkedIn</span>: <span className="literal"><a href={contact.linkedIn} target="_blank" rel="noopener noreferrer">() <span className="arrow">=></span> {contact.linkedIn}</a></span>,</p>
+        <p><span className="func">gitHub</span>: <span className="literal"><a href={contact.gitHub} target="_blank" rel="noopener noreferrer">() <span className="arrow">=></span> {contact.gitHub}</a></span>,</p>
+        <p><span className="func">twitter</span>: <span className="literal"><a href={contact.twitter} target="_blank" rel="noopener noreferrer">() <span className="arrow">=></span> {contact.twitter}</a></span>,</p>
+        <p><span className="func">instagram</span>: <span className="literal"><a href={contact.instagram} target="_blank" rel="noopener noreferrer">() <span className="arrow">=></span> {contact.instagram}</a></span></p>
       <h2>{'};'}</h2>
       </div>
     )
