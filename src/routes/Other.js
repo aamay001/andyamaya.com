@@ -42,8 +42,8 @@ export class Other extends Component {
         <p><span className="prop">message</span>: <span className="literal">{other.message}</span>,</p>
         <p><span className="prop">type</span>: <span className="literal">{other.type}</span>,</p>
         <p><span className="prop">{other.otherString1VarName}</span>: <span className="literal">{other.otherString1}</span>,</p>
-        <p><span className="func">website</span>: <span className="literal"><a href={other.website} target="_blank">() <span className="arrow">=></span> {other.website}</a></span>,</p>
-        <p><span className="func">{other.otherString2VarName}</span>: <span className="literal"><a href={other.otherString2} target="_blank">() <span className="arrow">=></span> {other.otherString2}</a></span></p>
+        <p><span className="func">website</span>: <span className="literal"><a href={other.website} target="_blank" rel="noopener noreferrer">() <span className="arrow">=></span> {other.website}</a></span>,</p>
+        <p><span className="func">{other.otherString2VarName}</span>: <span className="literal"><a href={other.otherString2} target="_blank" rel="noopener noreferrer">() <span className="arrow">=></span> {other.otherString2}</a></span></p>
         <h2>{'};'}</h2>
       </div>
     )
