@@ -1,3 +1,5 @@
+# This is an old portfolio design with a JavaScript theme. This is no longer updated or in use.
+
 # JavaScript Themed Portfolio
 
 This is the repo for my project portfolio. [https://andyamaya.com](https://andyamaya.com) 
